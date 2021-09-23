@@ -1,0 +1,26 @@
+{
+    "name": "teamones/service-discovery",
+    "description": "webman framework service register and discovery component",
+    "type": "library",
+    "license": "Apache License",
+    "authors": [
+        {
+            "name": "Weijer Cheng",
+            "email": "weiwei163@foxmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "workerman/workerman": "^4.0.4",
+        "illuminate/redis": "~8.20",
+        "teamones/log": ">=0.0.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Teamones\\Discovery": "src/"
+        }
+    },
+    "bin": [
+        "bin/go_etcd_client"
+    ]
+}
